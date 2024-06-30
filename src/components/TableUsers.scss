@@ -1,0 +1,51 @@
+// add-new component 
+  .add-new {
+      // display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .group-btns {
+          display: flex;
+          gap: 12px;
+
+          i {
+              padding: 0 2px;
+          }
+      }
+    }
+  
+  .table-btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .btn-mw {
+    min-width: 100px;
+  }
+
+//  table 
+  .customize-table {
+    width: inherit;
+    overflow-x: auto;
+
+    th {
+      text-align: center;
+    }
+
+    .sort-header {
+      display: flex;
+      justify-content: space-between;
+  
+      i {
+          cursor: pointer;
+          padding: 0 2px;
+      }
+  }
+  }
+
+// pagination
+  .pagination {
+    justify-content: center;
+  }
+
+  
