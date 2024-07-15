@@ -25,7 +25,7 @@ const Login = () => {
   };
 
   const handleGoBack = () => {
-    navigate("/");
+    navigate("/users");
   };
 
   const handlePressEnter = (event) => {
@@ -36,7 +36,7 @@ const Login = () => {
 
   useEffect(() => {
     if (account && account.auth === true) {
-      navigate("/");
+      navigate("/users");
     }
   }, [account]);
 

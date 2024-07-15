@@ -26,7 +26,7 @@ const Header = () => {
   useEffect(() => {
     if (user && user.auth === false && window.location.pathname !== "/login") {
       toast.success("Logout Success");
-      navigate("/");
+      navigate("/users");
     }
   }, [user]);
 
@@ -34,7 +34,7 @@ const Header = () => {
     <>
       <Navbar expand="lg" className="bg-light bg-gradient">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand>
             <img
               src={logoApp}
               width="52"
@@ -49,9 +49,6 @@ const Header = () => {
               window.location.pathname === "/users") && (
               <>
                 <Nav className="me-auto">
-                  <NavLink to="/" className="nav-link">
-                    Home
-                  </NavLink>
                   <NavLink to="/users" className="nav-link">
                     Manage user
                   </NavLink>
